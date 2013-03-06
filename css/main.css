@@ -94,10 +94,58 @@ textarea {
    ========================================================================== */
 
 
+body, html {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    border:none;
+}
 
+/***********************************
+    Header
+************************************/
 
+header {
+    background:#2E5C5C;
+/*    -webkit-box-shadow:  0 4px 5px 0 rgba(55, 55, 55, .3);
+    -mox-box-shadow: 0 4px 5px 0 rgba(55, 55, 55, .3);
+    box-shadow:  0 4px 5px 0 rgba(55, 55, 55, .3);*/
+    color:#EDEAEA;
+    padding:10px 5%;
+    height:80px;
+}
 
+header h1 {
+    font-size:20px;
+    float:left;
+    margin:25px 0 0 0;
+}
 
+header h2 {
+    font-size:14px;
+    float:right;
+    margin:25px 0 0 0;
+}
+
+header a {
+    display:block;
+    color:#EDEAEA;
+    margin:0 0 4px 0;
+}
+
+header .div {
+    display:none;
+}
+
+/***********************************
+    Wrapper
+************************************/
+
+.wrapper {
+    height:100%;
+    background:url('../img/headerSpikes.png') repeat-x 0 0;
+}
 
 
 
