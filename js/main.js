@@ -1,5 +1,24 @@
 var bubbleHandler = function () {
 
+    function whichTransitionEvent(){
+        var t;
+        var el = document.createElement('fakeelement');
+        var transitions = {
+          'transition':'transitionend',
+          'OTransition':'oTransitionEnd',
+          'MozTransition':'transitionend',
+          'WebkitTransition':'webkitTransitionEnd'
+        }
+
+        for ( t in transitions ) {
+            if ( el.style[t] !== undefined ) {
+                return transitions[t];
+            }
+        }
+    };
+
+    var transitionEnd = whichTransitionEvent();
+
     $('.bubble').hover(function() {
         var that = $(this);
         var thatRadius = that.width() / 2;
@@ -21,8 +40,15 @@ var bubbleHandler = function () {
         moused = false
     });
 
-    function bubbleHovered (el) {
+    setTimeout(function() {
+        $('.contentPiece').addClass('loaded');
+    }, 1200);
 
-    };
+    $('.contentPiece').on(transitionEnd, function() {
+        var that = $(this);
+        that.children('.bubble').css('display', 'none');
+        that.addClass('popped');
+    });
+
 
 }();
