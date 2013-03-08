@@ -9,6 +9,13 @@ var bubbleHandler = function () {
             var xCalc = (x - thatRadius) * (x - thatRadius);
             var yCalc = (y - thatRadius) * (y - thatRadius);
             var inCircle = Math.sqrt(xCalc + yCalc) <= thatRadius;
+
+            if ( inCircle ) {
+                that.css('cursor', 'pointer');
+            } else {
+                that.css('cursor', 'default');
+            }
+
         });
     }, function() {
         moused = false
