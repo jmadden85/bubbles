@@ -175,22 +175,52 @@ header .div {
     position:absolute;
 }
 
+.tmp {
+    z-index:20;
+    left:65%;
+    top:115%;
+    height:200px;
+    width:200px;
+}
+
+.iin {
+    z-index:10;
+    left:22%;
+    height:250px;
+    width:250px;
+}
+
+.eh {
+    z-index:30;
+    left:45%;
+    height:325px;
+    width:325px;
+}
+
+.freelance {
+    z-index:40;
+    left:28%;
+    top:125%;
+    height:300px;
+    width:300px;
+}
+
 .loaded {
     top: 5px;
-    -webkit-transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in;
-    -ms-transition: all 2s ease-in;
-    transition: all 2s ease-in;
+    -webkit-transition: all 7s ease-in;
+    -moz-transition: all 7s ease-in;
+    -o-transition: all 7s ease-in;
+    -ms-transition: all 7s ease-in;
+    transition: all 7s ease-in;
 }
 
 .popped {
     top:100%;
-    -webkit-transition: all 2s ease-in;
-    -moz-transition: all 2s ease-in;
-    -o-transition: all 2s ease-in;
-    -ms-transition: all 2s ease-in;
-    transition: all 2s ease-in;
+    -webkit-transition: all 1.25s ease-in;
+    -moz-transition: all 1.25s ease-in;
+    -o-transition: all 1.25s ease-in;
+    -ms-transition: all 1.25s ease-in;
+    transition: all 1.25s ease-in;
 }
 
 .content {
@@ -210,20 +240,6 @@ header .div {
 .content h3 {
     font-size:16px;
     margin:0;
-}
-
-#tmp {
-    z-index:20;
-    left:65%;
-    height:200px;
-    width:200px;
-}
-
-#iin {
-    z-index:10;
-    left:22%;
-    height:250px;
-    width:250px;
 }
 
 
